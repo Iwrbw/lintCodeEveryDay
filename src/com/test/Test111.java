@@ -10,12 +10,14 @@ public class Test111 {
     public int climbStairs(int n) {
         // write your code here
         int last=1,lastlast=1,now=0;
-        if (n == 1 || n == 0) {
+        if (n == 0)
+            return 0;
+        if (n == 1) {
             return 1;
-        }else {
+        } else {
             for (int i = 2; i <= n; i++) {
                 now = last +lastlast;
-                lastlast = now;
+                lastlast = last;
                 last = now;
             }
             return now;
