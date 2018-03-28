@@ -3,7 +3,7 @@ package com.test;
 /**
  * Create by yangshunfan
  * 2018/3/28 23:26
- * 最长上升子序列
+ * 最长上升连续子序列
  */
 public class Test397 {
 
