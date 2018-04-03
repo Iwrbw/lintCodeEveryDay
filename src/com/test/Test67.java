@@ -25,7 +25,7 @@ public class Test67 {
             }
             if (!stack.empty()){
                 root = stack.pop();
-                stack.add(root.right);
+                list.add(root.val);
                 root = root.right;
             }
         } while (!stack.empty() || root != null);
