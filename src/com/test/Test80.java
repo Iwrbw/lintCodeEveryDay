@@ -17,9 +17,9 @@ public class Test80 {
         if (nums.length == 1) {
             return nums[0];
         } else if (nums.length % 2 == 0) {
-            return nums[nums.length/2];
+            return nums[nums.length / 2];
         } else {
-            return nums[nums.length/2-1];
+            return nums[nums.length / 2 - 1];
         }
     }
 }

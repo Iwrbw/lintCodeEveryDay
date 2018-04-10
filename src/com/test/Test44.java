@@ -9,9 +9,10 @@ import java.util.List;
  * 最小子数组
  */
 public class Test44 {
+
     public static int minSubArray(List<Integer> nums) {
         // write your code here
-        if(nums == null || nums.size() == 0) {
+        if (nums == null || nums.size() == 0) {
             return 0;
         }
         int sum = nums.get(0);
@@ -22,13 +23,13 @@ public class Test44 {
             } else {
                 sum = nums.get(i);
             }
-            min = Math.min(sum,min);
+            min = Math.min(sum, min);
         }
         return min;
     }
 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList();
+        ArrayList list = new ArrayList();
         int[] a = {1,1,1,1,1,1,1,1,1,-19,1,1,1,1,1,1,1,-2,1,1,1,1,1,1,1,1,-2,1,-15,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
         for (int i = 0; i < a.length; i++) {
             list.add(a[i]);

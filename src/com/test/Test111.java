@@ -10,8 +10,9 @@ public class Test111 {
     public int climbStairs(int n) {
         // write your code here
         int last=1,lastlast=1,now=0;
-        if (n == 0)
+        if (n == 0) {
             return 0;
+        }
         if (n == 1) {
             return 1;
         } else {
@@ -30,8 +31,9 @@ public class Test111 {
         if (n == 0) {
             return 0;
         }
-        if (n == 1)
+        if (n == 1) {
             return 1;
+        }
         arr[0] = 1;
         arr[1] = 2;
         for (int i = 2; i < n; i++) {

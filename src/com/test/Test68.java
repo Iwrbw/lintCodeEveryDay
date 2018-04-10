@@ -13,8 +13,9 @@ public class Test68  {
     public List<Integer> postorderTraversal(TreeNode root) {
         // write your code here
         List<Integer> result = new ArrayList<>();
-        if(root == null)
+        if(root == null) {
             return result;
+        }
         Stack<TreeNode> stack = new Stack<TreeNode>();
         stack.push(root);   //首先将根节点压栈
         while(!stack.isEmpty()) {

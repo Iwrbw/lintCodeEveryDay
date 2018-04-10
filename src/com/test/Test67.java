@@ -23,7 +23,7 @@ public class Test67 {
                 stack.push(root);
                 root = root.left;
             }
-            if (!stack.empty()){
+            if (!stack.empty()) {
                 root = stack.pop();
                 list.add(root.val);
                 root = root.right;

@@ -12,7 +12,7 @@ public class Test93 {
     }
 
     public int isBalacedTree(TreeNode node) {
-        if (node == null){
+        if (node == null) {
             return 0;
         }
 

@@ -10,9 +10,14 @@ import java.util.List;
  * 主元素
  */
 public class Test46 {
+
+    /**
+     * 主方法
+     * @param args
+     */
     public static void main(String[] args) {
         List<Integer> list = new ArrayList();
-        int[] a = {2,2,2,1};
+        int[] a = {2, 2, 2, 1};
         for (int i = 0; i < a.length; i++) {
             list.add(a[i]);
         }
@@ -24,9 +29,6 @@ public class Test46 {
         if (nums == null || nums.size() == 0) {
             return 0;
         }
-        if (nums.size() == 1) {
-            return nums.get(0);
-        }
         int[] arr = new int[nums.size()];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = nums.get(i);
@@ -37,7 +39,7 @@ public class Test46 {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == temp) {
                 result++;
-                if (result > arr.length/2) {
+                if (result > arr.length / 2) {
                     return arr[i];
                 }
             } else {

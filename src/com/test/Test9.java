@@ -10,6 +10,10 @@ import java.util.List;
  */
 public class Test9 {
 
+    /**
+     * @param n
+     * @return lsit
+     */
     public List<String> fizzBuzz(int n) {
         // write your code here
         List<String> list = new ArrayList<String>();

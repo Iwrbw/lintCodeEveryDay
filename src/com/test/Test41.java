@@ -8,6 +8,12 @@ import java.util.Arrays;
  * 最大子数组
  */
 public class Test41 {
+
+    /**
+     * 主要方法
+     * @param nums
+     * @return int
+     */
     public int maxSubArray(int[] nums) {
         // write your code here
         if (nums == null || nums.length == 0) {
@@ -21,12 +27,12 @@ public class Test41 {
             } else {
                 sum = nums[i];
             }
-            max = Math.max(sum,max);
+            max = Math.max(sum, max);
         }
         //若数组内所有的数都小于0，先对数组进行排序，取数组末尾的数
         Arrays.sort(nums);
-        if (nums[nums.length-1] < 0) {
-            return nums[nums.length-1];
+        if (nums[nums.length - 1] < 0) {
+            return nums[nums.length - 1];
         }
         return max;
     }
