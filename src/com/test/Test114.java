@@ -6,8 +6,9 @@ package com.test;
  * 不同的路径
  */
 public class Test114 {
+
     public static void main(String[] args) {
-        System.out.println(uniquePaths(2,3));
+        System.out.println(uniquePaths(2, 3));
     }
     public static int uniquePaths(int m, int n) {
         // write your code here
@@ -27,10 +28,10 @@ public class Test114 {
         //int first = 1,secound = 1,thread = 1;
         for (int i = 1; i < m; i++) {
             for (int j = 1; j < n; j++) {
-                paths[i][j] = paths[i-1][j] + paths[i][j-1];
+                paths[i][j] = paths[i - 1][j] + paths[i][j - 1];
             }
 
         }
-        return paths[m-1][n-1];
+        return paths[m - 1][n - 1];
     }
 }

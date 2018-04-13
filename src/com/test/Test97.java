@@ -1,6 +1,5 @@
 package com.test;
 
-import java.util.Stack;
 
 /**
  * Create by yangshunfan
@@ -16,7 +15,7 @@ public class Test97 {
         /**
          * 这里我理解的很久，其实就是一直递归下去，从底部往上增加
          */
-        return Math.max(maxDepth(root.left),maxDepth(root.right)) + 1;
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 
 }

@@ -9,7 +9,7 @@ public class Test111 {
 
     public int climbStairs(int n) {
         // write your code here
-        int last=1,lastlast=1,now=0;
+        int last = 1, lastlast = 1, now = 0;
         if (n == 0) {
             return 0;
         }
@@ -17,7 +17,7 @@ public class Test111 {
             return 1;
         } else {
             for (int i = 2; i <= n; i++) {
-                now = last +lastlast;
+                now = last + lastlast;
                 lastlast = last;
                 last = now;
             }
@@ -39,7 +39,7 @@ public class Test111 {
         for (int i = 2; i < n; i++) {
             arr[i] = arr[0] + arr[2];
         }
-        return arr[n-1];
+        return arr[n - 1];
     }
 
     /**
@@ -57,6 +57,6 @@ public class Test111 {
         if (n == 2) {
             return 2;
         }
-        return (climbStairs3(n-1) + climbStairs3(n - 2));
+        return (climbStairs3(n - 1) + climbStairs3(n - 2));
     }
 }
