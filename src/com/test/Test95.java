@@ -11,19 +11,19 @@ public class Test95 {
     public boolean firstNode = true;
     public boolean isValidBST(TreeNode root) {
         // write your code here
-        if(root == null){
+        if (root == null){
             return true;
         }
-        if(!isValidBST(root.left)){
+        if (!isValidBST(root.left)) {
             return false;
         }
-        if(!firstNode && lastVal >= root.val){
+        if (!firstNode && lastVal >= root.val) {
             return false;
         }
         //此时 root.val>=lastval 是右子树
         firstNode = false;
         lastVal = root.val;
-        if(!isValidBST(root.right)){
+        if (!isValidBST(root.right)) {
             return false;
         }
         return true;

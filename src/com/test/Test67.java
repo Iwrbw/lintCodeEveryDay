@@ -19,6 +19,7 @@ public class Test67 {
         }
         stack.push(root);
         do {
+            //先将左儿子全部压入栈中
             while (root != null) {
                 stack.push(root);
                 root = root.left;

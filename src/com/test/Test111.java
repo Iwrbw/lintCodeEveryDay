@@ -37,7 +37,7 @@ public class Test111 {
         arr[0] = 1;
         arr[1] = 2;
         for (int i = 2; i < n; i++) {
-            arr[i] = arr[0] + arr[2];
+            arr[i] = arr[0] + arr[1];
         }
         return arr[n - 1];
     }

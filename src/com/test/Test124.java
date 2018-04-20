@@ -8,8 +8,11 @@ import java.util.TreeSet;
  */
 public class Test124 {
 
+    /**
+     * 主方法
+     */
     public static void main(String[] args) {
-        int[] a = {4,0,-4,-2,2,5,2,0,-8,-8,-8,-8,-1,7,4,5,5,-4,6,6,-3};
+        int[] a = {4, 0, -4, -2, 2, 5, 2, 0, -8, -8, -8, -8, -1, 7, 4, 5, 5, -4, 6, 6, -3};
         System.out.println(longestConsecutive(a));
     }
 
@@ -34,8 +37,8 @@ public class Test124 {
         }
         //主要比较逻辑
         int temp = 1;
-        for (int j = 0; j < arr.length-1; j++) {
-            if (arr[j] == arr[j+1]-1) {
+        for (int j = 0; j < arr.length - 1; j++) {
+            if (arr[j] == arr[j + 1] - 1) {
                 temp++;
             } else {
                 temp = 1;

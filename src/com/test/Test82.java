@@ -13,7 +13,7 @@ public class Test82 {
         int[] a = {0, 0, 1};
         System.out.println(singleNumber(a));
     }
-    public static int singleNumber(int[] A) {
+    private static int singleNumber(int[] A) {
         // write your code here
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < A.length; i++) {
