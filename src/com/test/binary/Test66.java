@@ -36,10 +36,10 @@ public class Test66 {
  * 二叉树
  */
 class TreeNode {
-    public int val;
-    public TreeNode left, right;
+    int val;
+    TreeNode left, right;
 
-    public TreeNode(int val, com.test.TreeNode left, com.test.TreeNode right) {
+    TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = null;
         this.right = null;
