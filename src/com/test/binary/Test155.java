@@ -1,4 +1,4 @@
-package com.test;
+package com.test.binary;
 
 /**
  * @author yangshunfan 2018/4/11 22:18

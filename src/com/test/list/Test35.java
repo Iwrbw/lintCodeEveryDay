@@ -1,4 +1,4 @@
-package com.test;
+package com.test.list;
 
 /**
  * Create by yangshunfan

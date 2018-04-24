@@ -13,7 +13,7 @@ public class Test415 {
         //将字符串转为字符数组
         char[] arr = s.toCharArray();
         int low = 0;
-        int high = arr.length-1;
+        int high = arr.length - 1;
 
         /**
          * 如果小指针小于大指针则进行逻辑处理
@@ -21,7 +21,7 @@ public class Test415 {
          * 若low>=high时,还没有出现不回文的情况，则return true。
          */
         while (low < high) {
-            if (!(Character.isLetter(arr[low]) || Character.isDigit(arr[low])) && low <= arr.length-1) {
+            if (!(Character.isLetter(arr[low]) || Character.isDigit(arr[low])) && low <= arr.length - 1) {
                 low++;
             }
             if (low == arr.length) {
@@ -43,6 +43,10 @@ public class Test415 {
         return low >= high;
     }
 
+    /**
+     * 主方法
+     * @param args
+     */
     public static void main(String[] args) {
         String s = "a.";
         System.out.println(isPalindrome(s));

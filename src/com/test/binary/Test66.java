@@ -1,4 +1,4 @@
-package com.test;
+package com.test.binary;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,5 +29,19 @@ public class Test66 {
             }
         }
         return list;
+    }
+}
+
+/**
+ * 二叉树
+ */
+class TreeNode {
+    public int val;
+    public TreeNode left, right;
+
+    public TreeNode(int val, com.test.TreeNode left, com.test.TreeNode right) {
+        this.val = val;
+        this.left = null;
+        this.right = null;
     }
 }

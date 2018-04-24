@@ -1,4 +1,4 @@
-package com.test;
+package com.test.binary;
 
 /**
  *  验证二叉查找树
@@ -7,8 +7,9 @@ package com.test;
  */
 public class Test95 {
 
-    public int lastVal = Integer.MAX_VALUE;
-    public boolean firstNode = true;
+    private int lastVal = Integer.MAX_VALUE;
+    private boolean firstNode = true;
+
     public boolean isValidBST(TreeNode root) {
         // write your code here
         if (root == null){
@@ -31,13 +32,3 @@ public class Test95 {
 
 }
 
-class TreeNode{
-    public int val;
-    public TreeNode left, right;
-
-    public TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = null;
-        this.right = null;
-    }
-}

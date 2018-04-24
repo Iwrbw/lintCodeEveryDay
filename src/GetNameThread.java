@@ -7,7 +7,7 @@ public class GetNameThread extends Thread{
     /**
      * 初始化线程的时候，获得回调类对象和人名
      */
-    public GetNameThread(ThroughCave tcave,String name) {
+    public GetNameThread(ThroughCave tcave, String name) {
         this.tcave = tcave;
         this.name = name;
     }
