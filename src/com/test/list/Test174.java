@@ -1,9 +1,8 @@
 package com.test.list;
 
-import com.test.list.ListNode;
-
 /**
  * @author yangshunfan 2018/4/18 22:42
+ * 倒数第n个节点
  */
 public class Test174 {
     /**

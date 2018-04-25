@@ -1,8 +1,5 @@
 package com.test.list;
 
-
-import com.test.list.ListNode;
-
 /**
  * @author yangshunfan 2018/4/12 21:23
  * 合并两个有序链表
