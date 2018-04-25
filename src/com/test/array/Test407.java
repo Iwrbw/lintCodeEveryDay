@@ -11,13 +11,13 @@ public class Test407 {
     public static void main(String[] args) {
         int[] digits = {8, 9, 9, 9};
         int[] result = plusOne(digits);
-        for (int i = 0; i < result.length; i++) {
-            System.out.print(result[i]);
+        for (int aResult : result) {
+            System.out.print(aResult);
         }
     }
     /**
      * @param digits: a number represented as an array of digits
-     * @return: the result
+     * @return: int[]: 加一后的数组
      */
     public static int[] plusOne(int[] digits) {
         // write your code here
@@ -38,7 +38,7 @@ public class Test407 {
                 list.add(conditions);
             }
         }
-        int[] result = new int[0];
+        int[] result;
         if (list.get(list.size() - 1) == 0) {
             result = new int[list.size() + 1];
             result[0] = 1;
