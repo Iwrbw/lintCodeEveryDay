@@ -1,7 +1,7 @@
 /**
  * @author yangshunfan 2018/4/18 15:11
  */
-public class GetNameThread extends Thread{
+public class GetNameThread extends Thread {
     private ThroughCave tcave;
     private String name;
     /**
@@ -12,7 +12,7 @@ public class GetNameThread extends Thread{
         this.name = name;
     }
     @Override
-    public void run(){
+    public void run() {
         //输出人名，模拟过山洞
         tcave.printName(name);
     }

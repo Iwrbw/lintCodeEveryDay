@@ -5,9 +5,13 @@ import java.util.List;
 
 /**
  * @author yangshunfan 2018/4/25 19:45
+ * 加一
  */
 public class Test407 {
 
+    /**
+     * 主方法
+     */
     public static void main(String[] args) {
         int[] digits = {8, 9, 9, 9};
         int[] result = plusOne(digits);
@@ -19,7 +23,7 @@ public class Test407 {
      * @param digits: a number represented as an array of digits
      * @return: int[]: 加一后的数组
      */
-    public static int[] plusOne(int[] digits) {
+    private static int[] plusOne(int[] digits) {
         // write your code here
         if (digits == null) {
             return null;
