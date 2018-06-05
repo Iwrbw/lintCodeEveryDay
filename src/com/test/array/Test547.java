@@ -27,7 +27,7 @@ public class Test547 {
             return results;
         }
 
-        HashSet<Integer> set = new HashSet<>();
+        HashSet<Integer> set = new HashSet<Integer>();
         Arrays.sort(num1);
         Arrays.sort(num2);
         int index2 = 0;

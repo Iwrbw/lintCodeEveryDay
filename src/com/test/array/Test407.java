@@ -28,7 +28,7 @@ public class Test407 {
         if (digits == null) {
             return null;
         }
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<Integer>();
         int add = 1;
 
         for (int i = digits.length - 1; i >= 0; i--) {

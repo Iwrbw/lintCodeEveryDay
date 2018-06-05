@@ -17,7 +17,7 @@ public class Test480 {
         if (root == null) {
             return null;
         }
-        ArrayList<String> result = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<String>();
         String pash = "";
         paths(root, result, pash);
         return result;

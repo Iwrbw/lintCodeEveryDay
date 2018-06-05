@@ -20,8 +20,8 @@ public class Test17 {
      */
     public static List<List<Integer>> subsets(int[] nums) {
         // write your code here
-        ArrayList<List<Integer>> res = new ArrayList<>();
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<List<Integer>> res = new ArrayList<List<Integer>>();
+        ArrayList<Integer> list = new ArrayList<Integer>();
         if(nums == null ){
             return res;
         }
@@ -33,7 +33,7 @@ public class Test17 {
                 List<Integer> temp = res.get(0);
                 //把第一个取出来
                 res.remove(0);
-                ArrayList<Integer> temp2 = new ArrayList<>(temp);
+                ArrayList<Integer> temp2 = new ArrayList<Integer>(temp);
                 temp2.add(temp2.size(), nums[i]);
                 //加入一个数，放进去
                 res.add(temp2);

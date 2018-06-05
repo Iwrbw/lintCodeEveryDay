@@ -11,7 +11,7 @@ public class Test91 {
 
     public static void main(String[] args) {
         int[] arr = {1, 3, 2, 3};
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<Integer>();
         for (int anArr : arr) {
             list.add(anArr);
         }

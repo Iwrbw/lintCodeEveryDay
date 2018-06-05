@@ -21,8 +21,8 @@ public class Test15 {
      */
     public static List<List<Integer>> permute(int[] nums) {
         // write your code here
-        List<List<Integer>> result = new ArrayList<>();
-        List<Integer> list = new ArrayList<>();
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        List<Integer> list = new ArrayList<Integer>();
         if (nums == null || nums.length == 0) {
             result.add(list);
             return result;
@@ -33,7 +33,7 @@ public class Test15 {
             int size = result.size();
             for (int j = 0; j < size; j++) {
                 for (int k = 0; k <= result.get(0).size(); k++) {
-                    List<Integer> tmp = new ArrayList<>(result.get(0));
+                    List<Integer> tmp = new ArrayList<Integer>(result.get(0));
                     tmp.add(k, nums[i]);
                     result.add(tmp);
                 }

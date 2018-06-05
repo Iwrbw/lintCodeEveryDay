@@ -34,7 +34,7 @@ public class Test175 {
      * @return: nothing
      */
     public void invertBingaryTree2(TreeNode root) {
-        LinkedList<TreeNode> queue = new LinkedList<>();
+        LinkedList<TreeNode> queue = new LinkedList<TreeNode>();
         TreeNode tmp = null;
 
         if (root == null) {

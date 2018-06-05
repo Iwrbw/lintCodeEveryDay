@@ -31,7 +31,7 @@ public class Test471 {
     public static String[] topKFrequentWords(String[] words, int k) {
         // write your code here
         //用map来储存数据
-        HashMap<String, Integer> map = new HashMap<>(0);
+        HashMap<String, Integer> map = new HashMap<String, Integer>(0);
         for (String word : words) {
             if (map.containsKey(word)) {
                 map.put(word, map.get(word) + 1);
@@ -41,7 +41,7 @@ public class Test471 {
         }
 
         //set用来去重，以后更好遍历
-        Set<Integer> set = new TreeSet<>();
+        Set<Integer> set = new TreeSet<Integer>();
         for (Entry<String, Integer> e : map.entrySet()) {
             set.add(e.getValue());
         }
@@ -54,7 +54,7 @@ public class Test471 {
             value[i++] = m;
         }
 
-        List<String> list = new ArrayList<>(k);
+        List<String> list = new ArrayList<String>(k);
 
         for (int j = value.length - 1; j >= 0 ; j--) {
             for (Entry<String, Integer> entry : map.entrySet()) {

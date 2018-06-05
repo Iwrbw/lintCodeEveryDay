@@ -34,8 +34,8 @@ public class MinStack {
         System.out.println(minStack.pop());
     }
 
-    Stack<Integer> stack = new Stack<>();
-    LinkedList<Integer> linkedList = new LinkedList<>();
+    Stack<Integer> stack = new Stack<Integer>();
+    LinkedList<Integer> linkedList = new LinkedList<Integer>();
     public MinStack() {
         // do intialization if necessary
 
