@@ -27,7 +27,7 @@ public class Test177 {
             return new TreeNode(arr[0]);
         }
         int mid = (low + high) / 2;
-        TreeNode node=new TreeNode(arr[mid]);
+        TreeNode node = new TreeNode(arr[mid]);
 
         if (low <= mid) {
             node.left = sort(arr, low, mid - 1);

@@ -12,7 +12,7 @@ public class Test95 {
 
     public boolean isValidBST(TreeNode root) {
         // write your code here
-        if (root == null){
+        if (root == null) {
             return true;
         }
         if (!isValidBST(root.left)) {
