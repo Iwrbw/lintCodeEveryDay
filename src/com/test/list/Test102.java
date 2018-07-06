@@ -27,7 +27,7 @@ public class Test102 {
     }
 
     /**
-     * 方法二
+     * 方法二 使用快慢指针
      * @param head
      * @return
      */
