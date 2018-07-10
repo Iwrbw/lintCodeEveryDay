@@ -60,7 +60,6 @@ public class Test460 {
                     for (int j = i + 1; j < k; j++) {
                         result[j] = A[right++];
                     }
-                    return result;
                 }
             } else {
                 result[i] = A[right];
@@ -70,11 +69,9 @@ public class Test460 {
                     for (int j = i + 1; j < k; j++) {
                         result[++i] = A[left--];
                     }
-
                 }
             }
         }
-
         return result;
     }
 }
