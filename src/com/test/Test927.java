@@ -21,22 +21,21 @@ public class Test927 {
     public static char[] reverseWords(char[] str) {
         // write your code here
         Stack<String> stack = new Stack<>();
-        String s = " ";
+        StringBuilder s = new StringBuilder(" ");
         for (Character character : str) {
             if (character != null && character != ' ') {
-                s += character;
+                s.append(character);
             } else {
-                stack.push(s);
-                s = " ";
+                stack.push(s.toString());
+                s = new StringBuilder(" ");
             }
         }
-        stack.push(s);
-        String tmp = "";
+        stack.push(s.toString());
+        StringBuilder tmp = new StringBuilder();
         while (!stack.empty()) {
-            tmp += stack.pop();
+            tmp.append(stack.pop());
         }
-        char[] result = tmp.substring(1).toCharArray();
 
-        return result;
+        return tmp.substring(1).toCharArray();
     }
 }
