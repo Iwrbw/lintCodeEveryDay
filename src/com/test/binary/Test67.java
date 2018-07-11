@@ -12,8 +12,8 @@ import java.util.Stack;
 public class Test67 {
     public List<Integer> inorderTraversal(TreeNode root) {
         // write your code here
-        Stack<TreeNode> stack = new Stack<TreeNode>();
-        List<Integer> list = new ArrayList<Integer>();
+        Stack<TreeNode> stack = new Stack<>();
+        List<Integer> list = new ArrayList<>();
         if (root == null) {
             return list;
         }
